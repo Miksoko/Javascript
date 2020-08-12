@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- <script src="keylessCarExercise.js"></script> -->
+   </head>
+   <body>
+
+      <!-- Keyless car -->
+      <div>
+         <button id="keylessCar" type="button">Keyless Car</button>
+         <script>
+            document.getElementById("keylessCar").onclick = function() {keylessCar()};
+            function keylessCar(){
+               var age = 0;
+               age = prompt("What is your age?");
+               if (age < 18){
+                  alert("I'm sorry, you cannot drive this car. Powering down.")
+               } else if (age == 18){
+                  alert("Congratulations on your first year of driving. Enjoy the ride!")
+               } else {
+                  alert("Powering On. Enjoy the ride!")
+               }
+            }
+         </script>
+      </div>
+
+      <!-- Addition -->
+      <div>
+         <button id="addition" type="button">Simple Addition</button>
+         <script>
+            document.getElementById("addition").onclick = function() {addition()};
+            function addition(){
+               var first = prompt("First number");
+               var second = prompt("Second number");
+               var sum = Number(first)+Number(second);
+               alert("the answer is " + sum);
+            }
+         </script>
+      </div>
+
+   </body>
+</html>
